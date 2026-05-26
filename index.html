@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Architect's Blueprint - Pembelajaran Sistem & AI secara hands-on.">
+  <meta name="theme-color" content="#1e1e1e">
+  <link rel="manifest" href="manifest.json">
+  <title>The Architect's Blueprint</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 The Architect's Blueprint</h1>
+    <p class="subtitle">Daripada asas sistem ke ejen AI – semuanya bermula di sini.</p>
+    <nav>
+      <button class="tab__button tab__button--active" data-tab="manifesto">📜 Manifesto</button>
+      <button class="tab__button" data-tab="tracks">🗺️ Tracks</button>
+      <button class="tab__button" data-tab="logbook">📓 Log Book</button>
+      <button class="tab__button" data-tab="playground">💻 Playground</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tab: Manifesto -->
+    <section id="tab-manifesto" class="tab-content tab-content--active">
+      <h2>Manifesto Pembelajaran</h2>
+      <p><strong>Mantra:</strong> "Saya bukan mengejar kelajuan menulis kod, saya mengejar kecekapan memahami sistem."</p>
+      <p>Blueprint ini adalah panduan lengkap untuk menjadi <em>System Architect</em> moden. Gabungan teknik tradisional yang kukuh dengan kuasa AI tempatan (Ollama, MCP, LangGraph).</p>
+      <h3>Prinsip Teras</h3>
+      <ul>
+        <li><strong>Manual First</strong>: fahami logik sebelum mengautomasikan.</li>
+        <li><strong>Localhost adalah raja</strong>: semua projek mesti sempurna di mesin sendiri.</li>
+        <li><strong>Modular & Terasing</strong>: setiap fungsi satu tugas.</li>
+        <li><strong>Observability</strong>: log dan pemantauan adalah kawan baik.</li>
+      </ul>
+      <p>Lihat fail <code>SKILL.md</code> untuk susunan teknologi.</p>
+    </section>
+
+    <!-- Tab: Tracks -->
+    <section id="tab-tracks" class="tab-content">
+      <h2>Learning Tracks</h2>
+      <div id="tracks-container">
+        <!-- Diisi oleh script.js -->
+      </div>
+      <p><small>Progress disimpan secara automatik dalam perambut ini.</small></p>
+    </section>
+
+    <!-- Tab: Log Book -->
+    <section id="tab-logbook" class="tab-content">
+      <h2>Log Book Mingguan</h2>
+      <form id="log-form">
+        <textarea id="log-input" rows="5" placeholder="Tulis refleksi minggu ini... Apa yang anda pelajari? Apa yang gagal?" required></textarea>
+        <button type="submit">Simpan Entri</button>
+      </form>
+      <div id="log-entries"></div>
+    </section>
+
+    <!-- Tab: Playground -->
+    <section id="tab-playground" class="tab-content">
+      <h2>Simulasi Terminal</h2>
+      <p>Rasa pengalaman Linux tanpa meninggalkan perambut. Cuba taip <code>help</code>.</p>
+      <div id="terminal">
+        <div id="terminal-output"></div>
+        <div class="terminal-input-line">
+          <span class="prompt">$</span>
+          <input type="text" id="terminal-input" autofocus placeholder="taip arahan..." autocomplete="off">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dibina dengan 💻 oleh komuniti "Orang Lama" | <a href="https://github.com/your-repo">GitHub</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
